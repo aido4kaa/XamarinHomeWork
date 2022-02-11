@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobilleApp.LoginPage"
+             Title="Авторизация">
+            
+    <ContentPage.Content>
+        <StackLayout WidthRequest="350"
+                     HorizontalOptions="CenterAndExpand"
+                     VerticalOptions="CenterAndExpand">
+            <Frame CornerRadius="15"
+                   BorderColor="Black"
+                   Margin="40">
+            <Label HorizontalOptions="Center"
+                   Text="ВХОД"
+                   TextColor="Black"
+                   FontSize="24"/>
+            </Frame>
+            <Frame CornerRadius="15"
+                   BorderColor="Black">
+                <Entry Placeholder="Логин"
+                       PlaceholderColor="Black"
+                       TextColor="Black"/>
+            </Frame>
+            <Frame CornerRadius="15"
+                   BorderColor="Black">
+                <Entry Placeholder="Пароль"
+                       IsPassword="True"
+                       PlaceholderColor="Black"
+                       TextColor="Black"/>
+            </Frame>
+            <Button Clicked="Button_Clicked" Text="Войти"
+                    TextColor="Black"
+                    BackgroundColor="White"
+                    BorderColor="Black"
+                    BorderWidth="1"
+                    CornerRadius="15"/>
+            <Button Clicked="Button_Clicked" Text="Регистрация"
+                    TextColor="Black"
+                    BorderColor="Black" 
+                    BorderWidth="1"
+                    BackgroundColor="White"
+                    CornerRadius="15"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

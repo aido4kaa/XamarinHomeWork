@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobilleApp.ProfilePage"
+             Title="Профиль">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <ScrollView>
+                <StackLayout>
+                    <StackLayout x:Name="Books">
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout>
+                                    <Frame Style="{StaticResource Frame1}">
+                                        <StackLayout>
+                                            <Frame BackgroundColor="HotPink">
+                                                <Label Text="{Binding name}" Style="{StaticResource FontStyle}"/>
+                                            </Frame>
+                                            <Frame BackgroundColor="HotPink">
+                                                <Label Text="{Binding city}" Style="{StaticResource FontStyle}"/>
+                                            </Frame>
+                                        </StackLayout>
+                                    </Frame>
+                                </StackLayout>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>                        
+                    </StackLayout>
+                </StackLayout> 
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
